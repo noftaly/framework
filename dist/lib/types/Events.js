@@ -72,6 +72,7 @@ var Events;
     Events["CommandFinish"] = "commandFinish";
     Events["CommandError"] = "commandError";
     Events["PluginLoaded"] = "pluginLoaded";
+    Events["NonePrefixedMessage"] = "nonePrefixedMessage";
     // #endregion Sapphire load cycle events
 })(Events = exports.Events || (exports.Events = {}));
 //# sourceMappingURL=Events.js.map

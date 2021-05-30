@@ -2033,7 +2033,8 @@ declare enum Events {
     CommandSuccess = "commandSuccess",
     CommandFinish = "commandFinish",
     CommandError = "commandError",
-    PluginLoaded = "pluginLoaded"
+    PluginLoaded = "pluginLoaded",
+    NonePrefixedMessage = "nonePrefixedMessage"
 }
 interface IPieceError {
     piece: Piece;
@@ -2092,6 +2093,7 @@ declare module 'discord.js' {
         [Events.CommandError]: [error: Error, payload: CommandErrorPayload];
         [Events.CommandFinish]: [message: Message, command: Command, payload: CommandFinishPayload];
         [Events.PluginLoaded]: [hook: PluginHook, name: string | undefined];
+        [Events.NonePrefixedMessage]: [message: Message];
         [K: string]: unknown[];
     }
 }

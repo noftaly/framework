@@ -34,7 +34,9 @@ class CoreEvent extends Event_1.Event {
             if (parsed !== null)
                 prefix = parsed;
         }
-        if (prefix !== null)
+        if (prefix === null)
+            client.emit(Events_1.Events.NonePrefixedMessage, message);
+        else
             client.emit(Events_1.Events.PrefixedMessage, message, prefix);
     }
     async canRunInChannel(message) {
