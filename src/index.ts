@@ -2,7 +2,6 @@ export {
 	AliasPiece,
 	AliasPieceOptions,
 	AliasStore,
-	Awaited,
 	container,
 	LoaderError,
 	MissingExportsError,
@@ -12,6 +11,7 @@ export {
 	Store,
 	StoreOptions
 } from '@sapphire/pieces';
+export type { Awaited } from '@sapphire/utilities';
 export * from './arguments';
 export * from './lib/errors/ArgumentError';
 export * from './lib/errors/Identifiers';
