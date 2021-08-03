@@ -12,7 +12,6 @@ export {
 	StoreOptions
 } from '@sapphire/pieces';
 export type { Awaited } from '@sapphire/utilities';
-export * from './arguments';
 export * from './lib/errors/ArgumentError';
 export * from './lib/errors/Identifiers';
 export * from './lib/errors/PreconditionError';
